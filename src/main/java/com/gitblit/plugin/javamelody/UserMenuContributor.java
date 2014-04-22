@@ -16,11 +16,12 @@
 package com.gitblit.plugin.javamelody;
 
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 import ro.fortsoft.pf4j.Extension;
 
-import com.gitblit.extensions.AdminMenuExtension;
+import com.gitblit.extensions.UserMenuExtension;
 import com.gitblit.models.Menu.ExternalLinkMenuItem;
 import com.gitblit.models.Menu.MenuItem;
 import com.gitblit.models.UserModel;
@@ -32,12 +33,15 @@ import com.gitblit.models.UserModel;
  *
  */
 @Extension
-public class AdminMenuContributor extends AdminMenuExtension {
+public class UserMenuContributor extends UserMenuExtension {
 
 	@Override
 	public List<MenuItem> getMenuItems(UserModel user) {
-		String path = Plugin.instance().getMonitoringPath();
-		return Arrays.asList((MenuItem) new ExternalLinkMenuItem("JavaMelody", path));
+		if (user.canAdmin()) {
+			String path = Plugin.instance().getMonitoringPath();
+			return Arrays.asList((MenuItem) new ExternalLinkMenuItem("JavaMelody", path));
+		}
+		return Collections.emptyList();
 	}
 
 }
