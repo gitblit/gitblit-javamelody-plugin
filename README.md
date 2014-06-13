@@ -18,9 +18,15 @@ Alternatively, you can download the zip and manually copy it to your `${baseFold
 
 ### Setup
 
-There is no initial setup for this plugin.  However, if there are JavaMelody settings that you want to configure, you may specify them in your `gitblit.properties` file.
+There is no initial setup for this plugin.  However, if there are JavaMelody [settings](https://code.google.com/p/javamelody/wiki/UserGuide) that you want to configure, you may specify them in your `gitblit.properties` file using the *javamelody.* prefix.
 
+e.g.
 
+    javamelody.monitoring-path = /jm
+
+### Usage
+
+Once the plug is installed *administrators* may access it via the user menu in the upper-right corner.  There will be a menu item link for the JavaMelody web ui.
 
 ### Building against a Gitblit RELEASE
 
