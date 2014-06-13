@@ -5,3 +5,8 @@
 /.idea
 /classes
 lib/*
+/ext
+/*.sh
+/pom.xml
+/bin
+/build
