@@ -93,7 +93,7 @@ repositories: 'central', 'com.gitblit'
 
 # Convenience properties for dependencies
 properties: {
-    gitblit.version : 1.6.0-SNAPSHOT
+    gitblit.version : 1.6.0
     javamelody.version : 1.50.0
  }
 
