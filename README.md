@@ -28,6 +28,11 @@ e.g.
 
 Once the plug is installed *administrators* may access it via the user menu in the upper-right corner.  There will be a menu item link for the JavaMelody web ui.
 
+### Authors
+
+- [David Ostrovsky](https://github.com/davido) (original author)
+- [gitblit.com](https://github.com/gitblit) (maintainer)
+
 ### Building against a Gitblit RELEASE
 
     ant && cp build/target/javamelody*.zip /path/to/gitblit/plugins
