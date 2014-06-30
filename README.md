@@ -26,7 +26,7 @@ e.g.
 
 ### Usage
 
-Once the plug is installed *administrators* may access it via the user menu in the upper-right corner.  There will be a menu item link for the JavaMelody web ui.
+Once the plugin is installed *administrators* may access it via the user menu in the upper-right corner.  There will be a menu item link for the JavaMelody web ui.
 
 ### Authors
 
