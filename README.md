@@ -2,7 +2,7 @@
 
 *REQUIRES 1.6.0*
 
-The Gitblit [JavaMelody](https://code.google.com/p/javamelody) plugin provides realtime monitoring of your Gitblit installation by JavaMelody.
+The Gitblit [JavaMelody](https://github.com/javamelody/javamelody/wiki) plugin provides realtime monitoring of your Gitblit installation by JavaMelody.
 
 Only *administrators* may access the JavaMelody app.
 
@@ -18,11 +18,12 @@ Alternatively, you can download the zip and manually copy it to your `${baseFold
 
 ### Setup
 
-There is no initial setup for this plugin.  However, if there are JavaMelody [settings](https://code.google.com/p/javamelody/wiki/UserGuide) that you want to configure, you may specify them in your `gitblit.properties` file using the *javamelody.* prefix.
+There is no initial setup for this plugin. However, if there are JavaMelody [settings](https://github.com/javamelody/javamelody/wiki/UserGuide#6-optional-parameters) that you want to configure, you may specify them in your `gitblit.properties` file using the *javamelody.* prefix.
 
 e.g.
 
     javamelody.monitoring-path = /jm
+    javamelody.storage-directory = /tmp/javamelody
 
 ### Usage
 
